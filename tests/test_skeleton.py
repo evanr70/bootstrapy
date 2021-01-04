@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-
 from bootstrapy.skeleton import fib
 
 __author__ = "Evan"
