@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from pathlib import Path
+
 from pkg_resources import DistributionNotFound, get_distribution
 
 try:
@@ -9,3 +11,5 @@ except DistributionNotFound:
     __version__ = "unknown"
 finally:
     del get_distribution, DistributionNotFound
+
+resources = Path(__file__).parent.parent.parent / "resources"
